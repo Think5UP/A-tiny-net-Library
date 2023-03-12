@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$" />
+  <component name="UnattendedHostPersistenceState">
+    <option name="openedFilesInfos">
+      <list>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="1749" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/Src/net/TCPServer.cpp" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="435" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/Src/net/Buffer.cpp" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="693" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/Src/net/Callbacks.h" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="2274" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/Src/net/TCPConnection.h" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="556" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/CMakeLists.txt" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="966" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/Src/net/Buffer.h" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="209" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/Src/net/Socket.h" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="6912" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/Src/net/TCPConnection.cpp" />
+        </OpenedFileInfo>
+      </list>
+    </option>
+  </component>
+</project>

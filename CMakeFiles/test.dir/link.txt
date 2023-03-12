@@ -1,0 +1,1 @@
+/opt/rh/devtoolset-9/root/usr/bin/c++  -rdynamic -pthread -O3 -fPIC -ggdb -std=c++11 -Wall -Wno-deprecated  -Werror -Wno-unused-function CMakeFiles/test.dir/Src/test/Logger_test.cpp.o -o bin/test  -Wl,-rpath,/root/net_lib/bin bin/libnet_lib.so 

@@ -102,17 +102,15 @@ namespace net_lib {
     void TCPConnection::ConnectEstablish() {
         setState(kConnected);
         /**
-        * TODO:tie
-        * channel_->tie(shared_from_this());
-        * tie相当于在底层有一个强引用指针记录着，防止析构
-        * 为了防止TcpConnection这个资源被误删掉，而这个时候还有许多事件要处理
-        * channel->tie 会进行一次判断，是否将弱引用指针变成强引用，变成得话就防止了计数为0而被析构得可能
-        */
+          * channel_->tie(shared_from_this());
+          * tie相当于在底层有一个强引用指针记录着，防止析构
+          * 为了防止TcpConnection这个资源被误删掉，而这个时候还有许多事件要处理
+          * channel->handleEvent 会进行一次判断，是否将弱引用指针变成强引用，变成得话就防止引用计数为0而被析构得可能
+          */
         channel_->tie(shared_from_this());
         channel_->enableReadEvent();
 
         connectionCallBack_(shared_from_this());
-
     }
 
     void TCPConnection::ConnectDestroy() {
@@ -171,11 +169,17 @@ namespace net_lib {
         }
     }
 
+    //在连接关闭的时候poller通知channel调用closeEventCallBack_函数，closeEventCallBack_是由TCPConnection::handleClose注册的
+    //所以实际上在连接关闭的时候会调用这个函数
     void TCPConnection::handleClose() {
+        LOG_INFO("TCPConnection::handleClose fd=%d, sate=%s \n",channel_->fd(),StateToString().c_str());
         setState(kDisConnected);
         channel_->disAllEvent();
+
         TCPConnectionPtr connPtr(shared_from_this());
+        //连接关闭的回调
         connectionCallBack_(connPtr);
+        //关闭连接,执行TCPServer::removeConnection
         closeCallBack_(connPtr);
     }
 
@@ -198,7 +202,7 @@ namespace net_lib {
 
     void TCPConnection::sendInLoop(const void *message, size_t len) {
         int nwrote = 0;
-        int remainning = len;
+        int remaining = len;
         bool defaultError = false;
         if (state_ == kDisConnected) {
             LOG_ERROR("TCPConnection is close give up writing");
@@ -207,15 +211,15 @@ namespace net_lib {
         if (!channel_->isWriting() && outputBuffer_.readableBytes() == 0) {
             nwrote = ::write(channel_->fd(), message, len);
             if (nwrote >= 0) {
-                remainning = len - nwrote;
+                remaining = len - nwrote;
                 //一次直接将数据全部写完了,那就直接执行回调就好了
-                if (remainning == 0 && writeCompleteCallBack_) {
+                if (remaining == 0 && writeCompleteCallBack_) {
                     loop_->queueInLoop(std::bind(writeCompleteCallBack_, shared_from_this()));
                 }
             } else {
                 //写入出错
                 nwrote = 0;
-                if (errno != EWOULDBLOCK)//排除因为非阻塞导致的错误
+                if (errno != EWOULDBLOCK)//排除因为非阻塞正常返回导致的错误
                 {
                     if (errno == EPIPE || errno == ECONNRESET) {
                         defaultError = true;
@@ -223,21 +227,26 @@ namespace net_lib {
                 }
             }
         }
-        if (!defaultError && remainning > 0) {
+        //write并没有一次性发送完,需要将剩余的数据存到buffer中然后给channel注册epollout事件
+        //poller发现tcp的发送缓冲区还有空间,会通知相应的sock-channel执行相应的writeEventCallBack_回调
+        //也就是handleWrite_,直到把缓冲区中的数据全部发送完毕
+        if (!defaultError && remaining > 0) {
+            //剩余的待发送数据长度
             size_t oldLen = outputBuffer_.readableBytes();
-            if (oldLen + remainning > highWaterMark_ &&
+            if (oldLen + remaining > highWaterMark_ &&
                 oldLen < highWaterMark_ &&
                 highWaterMarkCallBack_) {
                 loop_->queueInLoop(std::bind(TCPConnection::highWaterMarkCallBack_,
                                              shared_from_this(),
-                                             oldLen + remainning));
+                                             oldLen + remaining));
             }
-            outputBuffer_.append((char *) message + nwrote, remainning);
+            outputBuffer_.append((char *) message + nwrote, remaining);
             if (!channel_->isWriting()) {
-                channel_->enableWriteEvent();
+                channel_->enableWriteEvent();//给channel注册读事件,这样channel才会去调用writeEventCallBack_才能将数据全部发送完毕
             }
         }
     }
+
     void TCPConnection::shutdownInLoop() {
         //outputBuffer中的数据全部写完。
         if(!channel_->isWriting()){

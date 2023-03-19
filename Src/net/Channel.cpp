@@ -23,7 +23,7 @@ namespace net_lib{
     Channel::~Channel() {}
 
     void Channel::tie(const std::shared_ptr<void> &obj) {
-        //weak_ptr指向 obj
+        //当一个TCPConnection创建的时候就会将channel和TCPConnection绑定，防止TCPConnection被remove
         tie_ = obj;
         tied_ = true;
     }

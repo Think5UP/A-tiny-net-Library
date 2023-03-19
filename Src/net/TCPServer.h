@@ -68,10 +68,7 @@ namespace net_lib{
         std::atomic_int started_;//TCPServer的状态
         int nextConnId_;//连接索引
         ConnectionMap connections_;//存储所有的TCP连接
-
     };
-
-
 }
 
 #endif //NET_LIB_TCPSERVER_H

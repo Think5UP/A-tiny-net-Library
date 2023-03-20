@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/net_lib.dir/Src/Base/Thread.cpp.o.d"
   "CMakeFiles/net_lib.dir/Src/Base/Timestamp.cpp.o"
   "CMakeFiles/net_lib.dir/Src/Base/Timestamp.cpp.o.d"
+  "CMakeFiles/net_lib.dir/Src/memoryPool/memoryPool.cpp.o"
+  "CMakeFiles/net_lib.dir/Src/memoryPool/memoryPool.cpp.o.d"
   "CMakeFiles/net_lib.dir/Src/net/Acceptor.cpp.o"
   "CMakeFiles/net_lib.dir/Src/net/Acceptor.cpp.o.d"
   "CMakeFiles/net_lib.dir/Src/net/Buffer.cpp.o"

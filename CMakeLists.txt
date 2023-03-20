@@ -17,7 +17,8 @@ set(LIB_SRC
         Src/net/InetAddress.cpp Src/net/Socket.cpp Src/net/TCPServer.cpp
         Src/net/EventLoop.cpp Src/net/Channel.cpp
         Src/net/Poller/Poller.cpp Src/net/DefaultPoller.cpp Src/net/Poller/EpollPoller.cpp
-        Src/net/CurrentThread.cpp Src/Base/Thread.cpp Src/net/EventLoopThread.cpp Src/net/EventLoopThreadPool.cpp Src/net/Acceptor.cpp Src/net/TCPConnection.cpp Src/net/Buffer.cpp)
+        Src/net/CurrentThread.cpp Src/Base/Thread.cpp Src/net/EventLoopThread.cpp Src/net/EventLoopThreadPool.cpp Src/net/Acceptor.cpp Src/net/TCPConnection.cpp Src/net/Buffer.cpp
+        Src/memoryPool/memoryPool.cpp)
 
 add_library(net_lib SHARED ${LIB_SRC})
 

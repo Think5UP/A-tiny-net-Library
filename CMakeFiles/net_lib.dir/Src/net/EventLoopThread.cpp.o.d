@@ -131,7 +131,7 @@ CMakeFiles/net_lib.dir/Src/net/EventLoopThread.cpp.o: \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/backward/auto_ptr.h \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/functional \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/bits/std_function.h \
- /root/net_lib/Src/net/../Base/nocopyable.h \
+ /root/net_lib/Src/net/../Base/noncopyable.h \
  /root/net_lib/Src/net/../Base/Timestamp.h \
  /root/net_lib/Src/net/../Base/copyable.h \
  /root/net_lib/Src/net/../Base/Types.h /usr/include/string.h \
@@ -144,4 +144,4 @@ CMakeFiles/net_lib.dir/Src/net/EventLoopThread.cpp.o: \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/condition_variable \
  /root/net_lib/Src/net/../Base/Thread.h \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/thread \
- /root/net_lib/Src/net/../Base/nocopyable.h
+ /root/net_lib/Src/net/../Base/noncopyable.h

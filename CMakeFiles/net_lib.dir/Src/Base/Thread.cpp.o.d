@@ -126,7 +126,7 @@ CMakeFiles/net_lib.dir/Src/Base/Thread.cpp.o: \
  /usr/include/getopt.h \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/functional \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/bits/std_function.h \
- /root/net_lib/Src/Base/nocopyable.h \
+ /root/net_lib/Src/Base/noncopyable.h \
  /root/net_lib/Src/Base/../net/CurrentThread.h /usr/include/sys/syscall.h \
  /usr/include/asm/unistd.h /usr/include/asm/unistd_64.h \
  /usr/include/bits/syscall.h

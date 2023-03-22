@@ -5,7 +5,7 @@
 #ifndef NET_LIB_SOCKET_H
 #define NET_LIB_SOCKET_H
 
-#include "../Base/nocopyable.h"
+#include "../Base/noncopyable.h"
 
 namespace net_lib{
 

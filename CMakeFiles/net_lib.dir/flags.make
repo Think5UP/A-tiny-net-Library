@@ -6,5 +6,5 @@ CXX_DEFINES = -Dnet_lib_EXPORTS
 
 CXX_INCLUDES = 
 
-CXX_FLAGS =  -rdynamic -pthread -O3 -fPIC -ggdb -std=c++11 -Wall -Wno-deprecated  -Werror -Wno-unused-function -std=gnu++11 -fPIC
+CXX_FLAGS =  -rdynamic -pthread -O3 -fPIC -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -std=gnu++11 -fPIC
 

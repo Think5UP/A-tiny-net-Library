@@ -119,7 +119,7 @@ CMakeFiles/net_lib.dir/Src/net/EventLoop.cpp.o: \
  /usr/include/bits/environments.h /usr/include/bits/confname.h \
  /usr/include/getopt.h /usr/include/sys/eventfd.h \
  /usr/include/bits/eventfd.h /root/net_lib/Src/net/../Base/Logger.h \
- /root/net_lib/Src/net/../Base/nocopyable.h \
+ /root/net_lib/Src/net/../Base/noncopyable.h \
  /root/net_lib/Src/net/Poller/Poller.h \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/map \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/bits/stl_tree.h \
@@ -134,12 +134,12 @@ CMakeFiles/net_lib.dir/Src/net/EventLoop.cpp.o: \
  /root/net_lib/Src/net/Poller/../../Base/copyable.h \
  /root/net_lib/Src/net/Poller/../../Base/Types.h /usr/include/string.h \
  /usr/include/assert.h \
- /root/net_lib/Src/net/Poller/../../Base/nocopyable.h \
+ /root/net_lib/Src/net/Poller/../../Base/noncopyable.h \
  /root/net_lib/Src/net/Channel.h \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/functional \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/bits/std_function.h \
  /root/net_lib/Src/net/../Base/Timestamp.h \
- /root/net_lib/Src/net/../Base/nocopyable.h \
+ /root/net_lib/Src/net/../Base/noncopyable.h \
  /root/net_lib/Src/net/EventLoop.h \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/mutex \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/chrono \

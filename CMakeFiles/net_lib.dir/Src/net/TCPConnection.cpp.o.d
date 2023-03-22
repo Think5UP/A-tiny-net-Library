@@ -101,7 +101,7 @@ CMakeFiles/net_lib.dir/Src/net/TCPConnection.cpp.o: \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/bits/refwrap.h \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/bits/std_function.h \
  /root/net_lib/Src/net/Socket.h \
- /root/net_lib/Src/net/../Base/nocopyable.h \
+ /root/net_lib/Src/net/../Base/noncopyable.h \
  /root/net_lib/Src/net/Channel.h \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/memory \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/bits/stl_construct.h \
@@ -156,4 +156,4 @@ CMakeFiles/net_lib.dir/Src/net/TCPConnection.cpp.o: \
  /usr/include/asm-generic/socket.h /usr/include/asm/sockios.h \
  /usr/include/asm-generic/sockios.h /usr/include/bits/in.h \
  /root/net_lib/Src/net/../Base/Logger.h \
- /root/net_lib/Src/net/../Base/nocopyable.h
+ /root/net_lib/Src/net/../Base/noncopyable.h

@@ -14,7 +14,7 @@
 #include "Callbacks.h"
 #include "Acceptor.h"
 #include "EventLoop.h"
-#include "../Base/nocopyable.h"
+#include "../Base/noncopyable.h"
 #include "InetAddress.h"
 #include "TCPConnection.h"
 #include "EventLoopThreadPool.h"
@@ -35,6 +35,10 @@ namespace net_lib{
                   const std::string& name,
                   Option option = kNoReusePort);
         ~TCPServer();
+
+        EventLoop *getLoop() const { return loop_; }
+        const std::string &name() const { return name_; }
+        const std::string &ipPort() const { return ipPort_; }
 
         void start();
 

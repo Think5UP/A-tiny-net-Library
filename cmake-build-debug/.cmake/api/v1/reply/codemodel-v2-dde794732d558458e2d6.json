@@ -1,0 +1,96 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22.3"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "net_lib",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "net_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-net_lib-Debug-f67bad7155f08fda2d60.json",
+					"name" : "net_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test-Debug-125979f70bc5d99d5e10.json",
+					"name" : "test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_Inet::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_Inet-Debug-5139e587cf3cefcba4e8.json",
+					"name" : "test_Inet",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_Server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_Server-Debug-198414d95b3cb5740c29.json",
+					"name" : "test_Server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_context::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_context-Debug-a8fd093d22be23a4fd99.json",
+					"name" : "test_context",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/root/net_lib/cmake-build-debug",
+		"source" : "/root/net_lib"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

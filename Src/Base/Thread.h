@@ -11,7 +11,7 @@
 #include <unistd.h>
 #include <functional>
 
-#include "nocopyable.h"
+#include "noncopyable.h"
 
 namespace net_lib{
     class Thread : noncopyable{

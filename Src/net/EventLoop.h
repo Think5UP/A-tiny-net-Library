@@ -11,7 +11,7 @@
 #include <memory>
 #include <functional>
 
-#include "../Base/nocopyable.h"
+#include "../Base/noncopyable.h"
 #include "../Base/Timestamp.h"
 #include "CurrentThread.h"
 

@@ -10,7 +10,7 @@
 #include <memory>
 #include <functional>
 
-#include "../Base/nocopyable.h"
+#include "../Base/noncopyable.h"
 namespace net_lib{
     class EventLoop;
     class EventLoopThread;

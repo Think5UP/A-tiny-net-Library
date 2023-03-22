@@ -114,7 +114,7 @@ CMakeFiles/net_lib.dir/Src/net/Poller/Poller.cpp.o: \
  /root/net_lib/Src/net/Poller/../../Base/copyable.h \
  /root/net_lib/Src/net/Poller/../../Base/Types.h /usr/include/string.h \
  /usr/include/assert.h \
- /root/net_lib/Src/net/Poller/../../Base/nocopyable.h \
+ /root/net_lib/Src/net/Poller/../../Base/noncopyable.h \
  /root/net_lib/Src/net/Poller/../Channel.h \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/memory \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/bits/stl_tempbuf.h \
@@ -132,4 +132,4 @@ CMakeFiles/net_lib.dir/Src/net/Poller/Poller.cpp.o: \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/functional \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/bits/std_function.h \
  /root/net_lib/Src/net/Poller/../../Base/Timestamp.h \
- /root/net_lib/Src/net/Poller/../../Base/nocopyable.h
+ /root/net_lib/Src/net/Poller/../../Base/noncopyable.h

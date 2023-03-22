@@ -2,7 +2,7 @@
 
 #include <string>
 
-#include "nocopyable.h"
+#include "noncopyable.h"
 
 // LOG_INFO("%s %d", arg1, arg2)
 #define LOG_INFO(logmsgFormat, ...) \
@@ -10,9 +10,9 @@
     { \
         Logger &logger = Logger::instance(); \
         logger.setLogLevel(INFO); \
-        char buf[1024] = {0}; \
-        snprintf(buf, 1024, logmsgFormat, ##__VA_ARGS__); \
-        logger.log(buf); \
+        char bufff[1024] = {0}; \
+        snprintf(bufff, 1024, logmsgFormat, ##__VA_ARGS__); \
+        logger.log(bufff); \
     } while(0) 
 
 #define LOG_ERROR(logmsgFormat, ...) \
@@ -20,9 +20,9 @@
     { \
         Logger &logger = Logger::instance(); \
         logger.setLogLevel(ERROR); \
-        char buf[1024] = {0}; \
-        snprintf(buf, 1024, logmsgFormat, ##__VA_ARGS__); \
-        logger.log(buf); \
+        char bufff[1024] = {0}; \
+        snprintf(bufff, 1024, logmsgFormat, ##__VA_ARGS__); \
+        logger.log(bufff); \
     } while(0) 
 
 #define LOG_FATAL(logmsgFormat, ...) \
@@ -30,9 +30,9 @@
     { \
         Logger &logger = Logger::instance(); \
         logger.setLogLevel(FATAL); \
-        char buf[1024] = {0}; \
-        snprintf(buf, 1024, logmsgFormat, ##__VA_ARGS__); \
-        logger.log(buf); \
+        char bufff[1024] = {0}; \
+        snprintf(bufff, 1024, logmsgFormat, ##__VA_ARGS__); \
+        logger.log(bufff); \
         exit(-1); \
     } while(0) 
 

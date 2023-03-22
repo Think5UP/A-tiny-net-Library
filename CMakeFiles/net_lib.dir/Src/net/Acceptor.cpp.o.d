@@ -98,7 +98,7 @@ CMakeFiles/net_lib.dir/Src/net/Acceptor.cpp.o: \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/cerrno \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/bits/functional_hash.h \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/bits/basic_string.tcc \
- /root/net_lib/Src/net/../Base/nocopyable.h \
+ /root/net_lib/Src/net/../Base/noncopyable.h \
  /root/net_lib/Src/net/Acceptor.h \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/functional \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/tuple \
@@ -111,7 +111,7 @@ CMakeFiles/net_lib.dir/Src/net/Acceptor.cpp.o: \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/bits/refwrap.h \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/bits/std_function.h \
  /root/net_lib/Src/net/Socket.h \
- /root/net_lib/Src/net/../Base/nocopyable.h \
+ /root/net_lib/Src/net/../Base/noncopyable.h \
  /root/net_lib/Src/net/Channel.h \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/memory \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/bits/stl_construct.h \

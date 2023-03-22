@@ -156,24 +156,10 @@ CMakeFiles/net_lib.dir/Src/net/TCPServer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/net_lib.dir/Src/net/TCPServer.cpp.s"
 	/opt/rh/devtoolset-9/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/net_lib/Src/net/TCPServer.cpp -o CMakeFiles/net_lib.dir/Src/net/TCPServer.cpp.s
 
-CMakeFiles/net_lib.dir/Src/net/EventLoop.cpp.o: CMakeFiles/net_lib.dir/flags.make
-CMakeFiles/net_lib.dir/Src/net/EventLoop.cpp.o: Src/net/EventLoop.cpp
-CMakeFiles/net_lib.dir/Src/net/EventLoop.cpp.o: CMakeFiles/net_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/net_lib/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/net_lib.dir/Src/net/EventLoop.cpp.o"
-	/opt/rh/devtoolset-9/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/net_lib.dir/Src/net/EventLoop.cpp.o -MF CMakeFiles/net_lib.dir/Src/net/EventLoop.cpp.o.d -o CMakeFiles/net_lib.dir/Src/net/EventLoop.cpp.o -c /root/net_lib/Src/net/EventLoop.cpp
-
-CMakeFiles/net_lib.dir/Src/net/EventLoop.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/net_lib.dir/Src/net/EventLoop.cpp.i"
-	/opt/rh/devtoolset-9/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/net_lib/Src/net/EventLoop.cpp > CMakeFiles/net_lib.dir/Src/net/EventLoop.cpp.i
-
-CMakeFiles/net_lib.dir/Src/net/EventLoop.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/net_lib.dir/Src/net/EventLoop.cpp.s"
-	/opt/rh/devtoolset-9/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/net_lib/Src/net/EventLoop.cpp -o CMakeFiles/net_lib.dir/Src/net/EventLoop.cpp.s
-
 CMakeFiles/net_lib.dir/Src/net/Channel.cpp.o: CMakeFiles/net_lib.dir/flags.make
 CMakeFiles/net_lib.dir/Src/net/Channel.cpp.o: Src/net/Channel.cpp
 CMakeFiles/net_lib.dir/Src/net/Channel.cpp.o: CMakeFiles/net_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/net_lib/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/net_lib.dir/Src/net/Channel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/net_lib/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/net_lib.dir/Src/net/Channel.cpp.o"
 	/opt/rh/devtoolset-9/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/net_lib.dir/Src/net/Channel.cpp.o -MF CMakeFiles/net_lib.dir/Src/net/Channel.cpp.o.d -o CMakeFiles/net_lib.dir/Src/net/Channel.cpp.o -c /root/net_lib/Src/net/Channel.cpp
 
 CMakeFiles/net_lib.dir/Src/net/Channel.cpp.i: cmake_force
@@ -183,6 +169,20 @@ CMakeFiles/net_lib.dir/Src/net/Channel.cpp.i: cmake_force
 CMakeFiles/net_lib.dir/Src/net/Channel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/net_lib.dir/Src/net/Channel.cpp.s"
 	/opt/rh/devtoolset-9/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/net_lib/Src/net/Channel.cpp -o CMakeFiles/net_lib.dir/Src/net/Channel.cpp.s
+
+CMakeFiles/net_lib.dir/Src/net/EventLoop.cpp.o: CMakeFiles/net_lib.dir/flags.make
+CMakeFiles/net_lib.dir/Src/net/EventLoop.cpp.o: Src/net/EventLoop.cpp
+CMakeFiles/net_lib.dir/Src/net/EventLoop.cpp.o: CMakeFiles/net_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/net_lib/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/net_lib.dir/Src/net/EventLoop.cpp.o"
+	/opt/rh/devtoolset-9/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/net_lib.dir/Src/net/EventLoop.cpp.o -MF CMakeFiles/net_lib.dir/Src/net/EventLoop.cpp.o.d -o CMakeFiles/net_lib.dir/Src/net/EventLoop.cpp.o -c /root/net_lib/Src/net/EventLoop.cpp
+
+CMakeFiles/net_lib.dir/Src/net/EventLoop.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/net_lib.dir/Src/net/EventLoop.cpp.i"
+	/opt/rh/devtoolset-9/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/net_lib/Src/net/EventLoop.cpp > CMakeFiles/net_lib.dir/Src/net/EventLoop.cpp.i
+
+CMakeFiles/net_lib.dir/Src/net/EventLoop.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/net_lib.dir/Src/net/EventLoop.cpp.s"
+	/opt/rh/devtoolset-9/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/net_lib/Src/net/EventLoop.cpp -o CMakeFiles/net_lib.dir/Src/net/EventLoop.cpp.s
 
 CMakeFiles/net_lib.dir/Src/net/Poller/Poller.cpp.o: CMakeFiles/net_lib.dir/flags.make
 CMakeFiles/net_lib.dir/Src/net/Poller/Poller.cpp.o: Src/net/Poller/Poller.cpp
@@ -338,6 +338,48 @@ CMakeFiles/net_lib.dir/Src/memoryPool/memoryPool.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/net_lib.dir/Src/memoryPool/memoryPool.cpp.s"
 	/opt/rh/devtoolset-9/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/net_lib/Src/memoryPool/memoryPool.cpp -o CMakeFiles/net_lib.dir/Src/memoryPool/memoryPool.cpp.s
 
+CMakeFiles/net_lib.dir/Src/http/HttpResponse.cpp.o: CMakeFiles/net_lib.dir/flags.make
+CMakeFiles/net_lib.dir/Src/http/HttpResponse.cpp.o: Src/http/HttpResponse.cpp
+CMakeFiles/net_lib.dir/Src/http/HttpResponse.cpp.o: CMakeFiles/net_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/net_lib/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/net_lib.dir/Src/http/HttpResponse.cpp.o"
+	/opt/rh/devtoolset-9/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/net_lib.dir/Src/http/HttpResponse.cpp.o -MF CMakeFiles/net_lib.dir/Src/http/HttpResponse.cpp.o.d -o CMakeFiles/net_lib.dir/Src/http/HttpResponse.cpp.o -c /root/net_lib/Src/http/HttpResponse.cpp
+
+CMakeFiles/net_lib.dir/Src/http/HttpResponse.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/net_lib.dir/Src/http/HttpResponse.cpp.i"
+	/opt/rh/devtoolset-9/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/net_lib/Src/http/HttpResponse.cpp > CMakeFiles/net_lib.dir/Src/http/HttpResponse.cpp.i
+
+CMakeFiles/net_lib.dir/Src/http/HttpResponse.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/net_lib.dir/Src/http/HttpResponse.cpp.s"
+	/opt/rh/devtoolset-9/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/net_lib/Src/http/HttpResponse.cpp -o CMakeFiles/net_lib.dir/Src/http/HttpResponse.cpp.s
+
+CMakeFiles/net_lib.dir/Src/http/HttpContext.cpp.o: CMakeFiles/net_lib.dir/flags.make
+CMakeFiles/net_lib.dir/Src/http/HttpContext.cpp.o: Src/http/HttpContext.cpp
+CMakeFiles/net_lib.dir/Src/http/HttpContext.cpp.o: CMakeFiles/net_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/net_lib/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/net_lib.dir/Src/http/HttpContext.cpp.o"
+	/opt/rh/devtoolset-9/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/net_lib.dir/Src/http/HttpContext.cpp.o -MF CMakeFiles/net_lib.dir/Src/http/HttpContext.cpp.o.d -o CMakeFiles/net_lib.dir/Src/http/HttpContext.cpp.o -c /root/net_lib/Src/http/HttpContext.cpp
+
+CMakeFiles/net_lib.dir/Src/http/HttpContext.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/net_lib.dir/Src/http/HttpContext.cpp.i"
+	/opt/rh/devtoolset-9/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/net_lib/Src/http/HttpContext.cpp > CMakeFiles/net_lib.dir/Src/http/HttpContext.cpp.i
+
+CMakeFiles/net_lib.dir/Src/http/HttpContext.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/net_lib.dir/Src/http/HttpContext.cpp.s"
+	/opt/rh/devtoolset-9/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/net_lib/Src/http/HttpContext.cpp -o CMakeFiles/net_lib.dir/Src/http/HttpContext.cpp.s
+
+CMakeFiles/net_lib.dir/Src/http/HttpServer.cpp.o: CMakeFiles/net_lib.dir/flags.make
+CMakeFiles/net_lib.dir/Src/http/HttpServer.cpp.o: Src/http/HttpServer.cpp
+CMakeFiles/net_lib.dir/Src/http/HttpServer.cpp.o: CMakeFiles/net_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/net_lib/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/net_lib.dir/Src/http/HttpServer.cpp.o"
+	/opt/rh/devtoolset-9/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/net_lib.dir/Src/http/HttpServer.cpp.o -MF CMakeFiles/net_lib.dir/Src/http/HttpServer.cpp.o.d -o CMakeFiles/net_lib.dir/Src/http/HttpServer.cpp.o -c /root/net_lib/Src/http/HttpServer.cpp
+
+CMakeFiles/net_lib.dir/Src/http/HttpServer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/net_lib.dir/Src/http/HttpServer.cpp.i"
+	/opt/rh/devtoolset-9/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/net_lib/Src/http/HttpServer.cpp > CMakeFiles/net_lib.dir/Src/http/HttpServer.cpp.i
+
+CMakeFiles/net_lib.dir/Src/http/HttpServer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/net_lib.dir/Src/http/HttpServer.cpp.s"
+	/opt/rh/devtoolset-9/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/net_lib/Src/http/HttpServer.cpp -o CMakeFiles/net_lib.dir/Src/http/HttpServer.cpp.s
+
 # Object files for target net_lib
 net_lib_OBJECTS = \
 "CMakeFiles/net_lib.dir/Src/Base/Date.cpp.o" \
@@ -346,8 +388,8 @@ net_lib_OBJECTS = \
 "CMakeFiles/net_lib.dir/Src/net/InetAddress.cpp.o" \
 "CMakeFiles/net_lib.dir/Src/net/Socket.cpp.o" \
 "CMakeFiles/net_lib.dir/Src/net/TCPServer.cpp.o" \
-"CMakeFiles/net_lib.dir/Src/net/EventLoop.cpp.o" \
 "CMakeFiles/net_lib.dir/Src/net/Channel.cpp.o" \
+"CMakeFiles/net_lib.dir/Src/net/EventLoop.cpp.o" \
 "CMakeFiles/net_lib.dir/Src/net/Poller/Poller.cpp.o" \
 "CMakeFiles/net_lib.dir/Src/net/DefaultPoller.cpp.o" \
 "CMakeFiles/net_lib.dir/Src/net/Poller/EpollPoller.cpp.o" \
@@ -358,7 +400,10 @@ net_lib_OBJECTS = \
 "CMakeFiles/net_lib.dir/Src/net/Acceptor.cpp.o" \
 "CMakeFiles/net_lib.dir/Src/net/TCPConnection.cpp.o" \
 "CMakeFiles/net_lib.dir/Src/net/Buffer.cpp.o" \
-"CMakeFiles/net_lib.dir/Src/memoryPool/memoryPool.cpp.o"
+"CMakeFiles/net_lib.dir/Src/memoryPool/memoryPool.cpp.o" \
+"CMakeFiles/net_lib.dir/Src/http/HttpResponse.cpp.o" \
+"CMakeFiles/net_lib.dir/Src/http/HttpContext.cpp.o" \
+"CMakeFiles/net_lib.dir/Src/http/HttpServer.cpp.o"
 
 # External object files for target net_lib
 net_lib_EXTERNAL_OBJECTS =
@@ -369,8 +414,8 @@ bin/libnet_lib.so: CMakeFiles/net_lib.dir/Src/Base/Timestamp.cpp.o
 bin/libnet_lib.so: CMakeFiles/net_lib.dir/Src/net/InetAddress.cpp.o
 bin/libnet_lib.so: CMakeFiles/net_lib.dir/Src/net/Socket.cpp.o
 bin/libnet_lib.so: CMakeFiles/net_lib.dir/Src/net/TCPServer.cpp.o
-bin/libnet_lib.so: CMakeFiles/net_lib.dir/Src/net/EventLoop.cpp.o
 bin/libnet_lib.so: CMakeFiles/net_lib.dir/Src/net/Channel.cpp.o
+bin/libnet_lib.so: CMakeFiles/net_lib.dir/Src/net/EventLoop.cpp.o
 bin/libnet_lib.so: CMakeFiles/net_lib.dir/Src/net/Poller/Poller.cpp.o
 bin/libnet_lib.so: CMakeFiles/net_lib.dir/Src/net/DefaultPoller.cpp.o
 bin/libnet_lib.so: CMakeFiles/net_lib.dir/Src/net/Poller/EpollPoller.cpp.o
@@ -382,9 +427,12 @@ bin/libnet_lib.so: CMakeFiles/net_lib.dir/Src/net/Acceptor.cpp.o
 bin/libnet_lib.so: CMakeFiles/net_lib.dir/Src/net/TCPConnection.cpp.o
 bin/libnet_lib.so: CMakeFiles/net_lib.dir/Src/net/Buffer.cpp.o
 bin/libnet_lib.so: CMakeFiles/net_lib.dir/Src/memoryPool/memoryPool.cpp.o
+bin/libnet_lib.so: CMakeFiles/net_lib.dir/Src/http/HttpResponse.cpp.o
+bin/libnet_lib.so: CMakeFiles/net_lib.dir/Src/http/HttpContext.cpp.o
+bin/libnet_lib.so: CMakeFiles/net_lib.dir/Src/http/HttpServer.cpp.o
 bin/libnet_lib.so: CMakeFiles/net_lib.dir/build.make
 bin/libnet_lib.so: CMakeFiles/net_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/net_lib/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX shared library bin/libnet_lib.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/net_lib/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX shared library bin/libnet_lib.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/net_lib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

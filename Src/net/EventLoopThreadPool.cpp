@@ -2,6 +2,8 @@
 // Created by root on 3/1/23.
 //
 
+#include "../Base/Logger.h"
+
 #include "EventLoop.h"
 #include "EventLoopThread.h"
 #include "EventLoopThreadPool.h"
@@ -19,6 +21,7 @@ namespace net_lib{
 
     void EventLoopThreadPool::start(const threadInitCallBack &cb) {
         started_ = true;
+        LOG_INFO("numThread_ = %d",numThread_);
         for(int i = 0; i < numThread_; ++i){
             char buf[name_.size() + 32];
             snprintf(buf, sizeof(buf),"%s%d",name_.c_str(),i);

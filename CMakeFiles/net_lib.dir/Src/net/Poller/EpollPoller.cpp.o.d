@@ -119,7 +119,7 @@ CMakeFiles/net_lib.dir/Src/net/Poller/EpollPoller.cpp.o: \
  /root/net_lib/Src/net/Poller/../../Base/Timestamp.h \
  /root/net_lib/Src/net/Poller/../../Base/copyable.h \
  /root/net_lib/Src/net/Poller/../../Base/Types.h /usr/include/string.h \
- /root/net_lib/Src/net/Poller/../../Base/nocopyable.h \
+ /root/net_lib/Src/net/Poller/../../Base/noncopyable.h \
  /root/net_lib/Src/net/Poller/EpollPoller.h \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/vector \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/bits/stl_vector.h \
@@ -135,6 +135,6 @@ CMakeFiles/net_lib.dir/Src/net/Poller/EpollPoller.cpp.o: \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/bits/stl_multimap.h \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/bits/erase_if.h \
  /root/net_lib/Src/net/Poller/../../Base/Timestamp.h \
- /root/net_lib/Src/net/Poller/../../Base/nocopyable.h \
+ /root/net_lib/Src/net/Poller/../../Base/noncopyable.h \
  /root/net_lib/Src/net/Poller/../../Base/Logger.h \
- /root/net_lib/Src/net/Poller/../../Base/nocopyable.h
+ /root/net_lib/Src/net/Poller/../../Base/noncopyable.h

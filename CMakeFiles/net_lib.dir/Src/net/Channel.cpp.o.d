@@ -91,7 +91,7 @@ CMakeFiles/net_lib.dir/Src/net/Channel.cpp.o: \
  /usr/include/asm-generic/errno-base.h \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/bits/functional_hash.h \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/bits/basic_string.tcc \
- /root/net_lib/Src/net/../Base/nocopyable.h \
+ /root/net_lib/Src/net/../Base/noncopyable.h \
  /root/net_lib/Src/net/Channel.h \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/memory \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/bits/stl_construct.h \
@@ -121,7 +121,7 @@ CMakeFiles/net_lib.dir/Src/net/Channel.cpp.o: \
  /root/net_lib/Src/net/../Base/Timestamp.h \
  /root/net_lib/Src/net/../Base/copyable.h \
  /root/net_lib/Src/net/../Base/Types.h /usr/include/string.h \
- /usr/include/assert.h /root/net_lib/Src/net/../Base/nocopyable.h \
+ /usr/include/assert.h /root/net_lib/Src/net/../Base/noncopyable.h \
  /root/net_lib/Src/net/EventLoop.h \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/mutex \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/chrono \

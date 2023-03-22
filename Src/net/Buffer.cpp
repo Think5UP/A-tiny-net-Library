@@ -9,6 +9,8 @@
 
 namespace net_lib{
 
+    const char Buffer::kCRLF[] = "\r\n";
+
     ssize_t Buffer::readfd(int fd, int *saveErrno) {
         //初始化一段栈上的内存空间作为临时的缓冲区
         char extraBuf[65536] {0};

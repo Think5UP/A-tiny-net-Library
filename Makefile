@@ -158,6 +158,32 @@ test_Inet/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_Inet.dir/build.make CMakeFiles/test_Inet.dir/build
 .PHONY : test_Inet/fast
 
+#=============================================================================
+# Target rules for targets named test_context
+
+# Build rule for target.
+test_context: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_context
+.PHONY : test_context
+
+# fast build rule for target.
+test_context/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_context.dir/build.make CMakeFiles/test_context.dir/build
+.PHONY : test_context/fast
+
+#=============================================================================
+# Target rules for targets named test_Server
+
+# Build rule for target.
+test_Server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_Server
+.PHONY : test_Server
+
+# fast build rule for target.
+test_Server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_Server.dir/build.make CMakeFiles/test_Server.dir/build
+.PHONY : test_Server/fast
+
 Src/Base/Date.o: Src/Base/Date.cpp.o
 .PHONY : Src/Base/Date.o
 
@@ -253,6 +279,78 @@ Src/Base/Timestamp.s: Src/Base/Timestamp.cpp.s
 Src/Base/Timestamp.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/net_lib.dir/build.make CMakeFiles/net_lib.dir/Src/Base/Timestamp.cpp.s
 .PHONY : Src/Base/Timestamp.cpp.s
+
+Src/http/HttpContext.o: Src/http/HttpContext.cpp.o
+.PHONY : Src/http/HttpContext.o
+
+# target to build an object file
+Src/http/HttpContext.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net_lib.dir/build.make CMakeFiles/net_lib.dir/Src/http/HttpContext.cpp.o
+.PHONY : Src/http/HttpContext.cpp.o
+
+Src/http/HttpContext.i: Src/http/HttpContext.cpp.i
+.PHONY : Src/http/HttpContext.i
+
+# target to preprocess a source file
+Src/http/HttpContext.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net_lib.dir/build.make CMakeFiles/net_lib.dir/Src/http/HttpContext.cpp.i
+.PHONY : Src/http/HttpContext.cpp.i
+
+Src/http/HttpContext.s: Src/http/HttpContext.cpp.s
+.PHONY : Src/http/HttpContext.s
+
+# target to generate assembly for a file
+Src/http/HttpContext.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net_lib.dir/build.make CMakeFiles/net_lib.dir/Src/http/HttpContext.cpp.s
+.PHONY : Src/http/HttpContext.cpp.s
+
+Src/http/HttpResponse.o: Src/http/HttpResponse.cpp.o
+.PHONY : Src/http/HttpResponse.o
+
+# target to build an object file
+Src/http/HttpResponse.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net_lib.dir/build.make CMakeFiles/net_lib.dir/Src/http/HttpResponse.cpp.o
+.PHONY : Src/http/HttpResponse.cpp.o
+
+Src/http/HttpResponse.i: Src/http/HttpResponse.cpp.i
+.PHONY : Src/http/HttpResponse.i
+
+# target to preprocess a source file
+Src/http/HttpResponse.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net_lib.dir/build.make CMakeFiles/net_lib.dir/Src/http/HttpResponse.cpp.i
+.PHONY : Src/http/HttpResponse.cpp.i
+
+Src/http/HttpResponse.s: Src/http/HttpResponse.cpp.s
+.PHONY : Src/http/HttpResponse.s
+
+# target to generate assembly for a file
+Src/http/HttpResponse.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net_lib.dir/build.make CMakeFiles/net_lib.dir/Src/http/HttpResponse.cpp.s
+.PHONY : Src/http/HttpResponse.cpp.s
+
+Src/http/HttpServer.o: Src/http/HttpServer.cpp.o
+.PHONY : Src/http/HttpServer.o
+
+# target to build an object file
+Src/http/HttpServer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net_lib.dir/build.make CMakeFiles/net_lib.dir/Src/http/HttpServer.cpp.o
+.PHONY : Src/http/HttpServer.cpp.o
+
+Src/http/HttpServer.i: Src/http/HttpServer.cpp.i
+.PHONY : Src/http/HttpServer.i
+
+# target to preprocess a source file
+Src/http/HttpServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net_lib.dir/build.make CMakeFiles/net_lib.dir/Src/http/HttpServer.cpp.i
+.PHONY : Src/http/HttpServer.cpp.i
+
+Src/http/HttpServer.s: Src/http/HttpServer.cpp.s
+.PHONY : Src/http/HttpServer.s
+
+# target to generate assembly for a file
+Src/http/HttpServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net_lib.dir/build.make CMakeFiles/net_lib.dir/Src/http/HttpServer.cpp.s
+.PHONY : Src/http/HttpServer.cpp.s
 
 Src/memoryPool/memoryPool.o: Src/memoryPool/memoryPool.cpp.o
 .PHONY : Src/memoryPool/memoryPool.o
@@ -614,6 +712,54 @@ Src/net/TCPServer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/net_lib.dir/build.make CMakeFiles/net_lib.dir/Src/net/TCPServer.cpp.s
 .PHONY : Src/net/TCPServer.cpp.s
 
+Src/test/HttpContext_test.o: Src/test/HttpContext_test.cpp.o
+.PHONY : Src/test/HttpContext_test.o
+
+# target to build an object file
+Src/test/HttpContext_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_context.dir/build.make CMakeFiles/test_context.dir/Src/test/HttpContext_test.cpp.o
+.PHONY : Src/test/HttpContext_test.cpp.o
+
+Src/test/HttpContext_test.i: Src/test/HttpContext_test.cpp.i
+.PHONY : Src/test/HttpContext_test.i
+
+# target to preprocess a source file
+Src/test/HttpContext_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_context.dir/build.make CMakeFiles/test_context.dir/Src/test/HttpContext_test.cpp.i
+.PHONY : Src/test/HttpContext_test.cpp.i
+
+Src/test/HttpContext_test.s: Src/test/HttpContext_test.cpp.s
+.PHONY : Src/test/HttpContext_test.s
+
+# target to generate assembly for a file
+Src/test/HttpContext_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_context.dir/build.make CMakeFiles/test_context.dir/Src/test/HttpContext_test.cpp.s
+.PHONY : Src/test/HttpContext_test.cpp.s
+
+Src/test/HttpServer_test.o: Src/test/HttpServer_test.cpp.o
+.PHONY : Src/test/HttpServer_test.o
+
+# target to build an object file
+Src/test/HttpServer_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_Server.dir/build.make CMakeFiles/test_Server.dir/Src/test/HttpServer_test.cpp.o
+.PHONY : Src/test/HttpServer_test.cpp.o
+
+Src/test/HttpServer_test.i: Src/test/HttpServer_test.cpp.i
+.PHONY : Src/test/HttpServer_test.i
+
+# target to preprocess a source file
+Src/test/HttpServer_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_Server.dir/build.make CMakeFiles/test_Server.dir/Src/test/HttpServer_test.cpp.i
+.PHONY : Src/test/HttpServer_test.cpp.i
+
+Src/test/HttpServer_test.s: Src/test/HttpServer_test.cpp.s
+.PHONY : Src/test/HttpServer_test.s
+
+# target to generate assembly for a file
+Src/test/HttpServer_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_Server.dir/build.make CMakeFiles/test_Server.dir/Src/test/HttpServer_test.cpp.s
+.PHONY : Src/test/HttpServer_test.cpp.s
+
 Src/test/Inet_test.o: Src/test/Inet_test.cpp.o
 .PHONY : Src/test/Inet_test.o
 
@@ -673,6 +819,8 @@ help:
 	@echo "... net_lib"
 	@echo "... test"
 	@echo "... test_Inet"
+	@echo "... test_Server"
+	@echo "... test_context"
 	@echo "... Src/Base/Date.o"
 	@echo "... Src/Base/Date.i"
 	@echo "... Src/Base/Date.s"
@@ -685,6 +833,15 @@ help:
 	@echo "... Src/Base/Timestamp.o"
 	@echo "... Src/Base/Timestamp.i"
 	@echo "... Src/Base/Timestamp.s"
+	@echo "... Src/http/HttpContext.o"
+	@echo "... Src/http/HttpContext.i"
+	@echo "... Src/http/HttpContext.s"
+	@echo "... Src/http/HttpResponse.o"
+	@echo "... Src/http/HttpResponse.i"
+	@echo "... Src/http/HttpResponse.s"
+	@echo "... Src/http/HttpServer.o"
+	@echo "... Src/http/HttpServer.i"
+	@echo "... Src/http/HttpServer.s"
 	@echo "... Src/memoryPool/memoryPool.o"
 	@echo "... Src/memoryPool/memoryPool.i"
 	@echo "... Src/memoryPool/memoryPool.s"
@@ -730,6 +887,12 @@ help:
 	@echo "... Src/net/TCPServer.o"
 	@echo "... Src/net/TCPServer.i"
 	@echo "... Src/net/TCPServer.s"
+	@echo "... Src/test/HttpContext_test.o"
+	@echo "... Src/test/HttpContext_test.i"
+	@echo "... Src/test/HttpContext_test.s"
+	@echo "... Src/test/HttpServer_test.o"
+	@echo "... Src/test/HttpServer_test.i"
+	@echo "... Src/test/HttpServer_test.s"
 	@echo "... Src/test/Inet_test.o"
 	@echo "... Src/test/Inet_test.i"
 	@echo "... Src/test/Inet_test.s"

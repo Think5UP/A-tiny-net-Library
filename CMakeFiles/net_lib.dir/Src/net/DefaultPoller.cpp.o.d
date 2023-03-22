@@ -114,7 +114,7 @@ CMakeFiles/net_lib.dir/Src/net/DefaultPoller.cpp.o: \
  /root/net_lib/Src/net/Poller/../../Base/copyable.h \
  /root/net_lib/Src/net/Poller/../../Base/Types.h /usr/include/string.h \
  /usr/include/assert.h \
- /root/net_lib/Src/net/Poller/../../Base/nocopyable.h \
+ /root/net_lib/Src/net/Poller/../../Base/noncopyable.h \
  /root/net_lib/Src/net/Poller/PollPoller.h \
  /root/net_lib/Src/net/Poller/Poller.h \
  /root/net_lib/Src/net/Poller/EpollPoller.h /usr/include/unistd.h \

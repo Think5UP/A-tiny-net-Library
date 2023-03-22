@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = 
 
-CXX_FLAGS =  -rdynamic -pthread -O3 -fPIC -ggdb -std=c++11 -Wall -Wno-deprecated  -Werror -Wno-unused-function -std=gnu++11
+CXX_FLAGS =  -rdynamic -pthread -O3 -fPIC -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -std=gnu++11
 

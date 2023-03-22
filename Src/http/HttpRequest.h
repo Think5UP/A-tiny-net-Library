@@ -34,7 +34,8 @@ public:
     }
     ~HttpRequest(){}
 
-    bool setMethod(const char *method) {
+    bool setMethod(const char *start,const char *end) {
+    std::string method(start,end);
 #define XX(Me, m)                       \
     if(method == #m){                   \
         method_ = Method::Me;           \
@@ -44,13 +45,19 @@ public:
         XX(kHead, head);
         XX(kPut, put);
         XX(kDelete, Delete);
+
+        XX(kGet, GET);
+        XX(kPost, POST);
+        XX(kHead, HEAD);
+        XX(kPut, PUT);
+        XX(kDelete, DELETE);
 #undef XX
         return method_ != kInvalid;
     }
 
     Method method() const { return method_; }
 
-     const char* MethodToString() const {
+    const char* MethodToString() const {
         switch (method_) {
 #define XX(name)                    \
         case Method::name:           \
@@ -97,9 +104,9 @@ public:
     }
 
     //获取请求头部的值
-    const std::string &getHeader(const std::string &field) const {
+    std::string getHeader(const std::string &field) const {
         std::string result;
-        std::map<std::string,std::string>::const_iterator it = header_.find(field);
+        auto it = header_.find(field);
         if(it != header_.end()){
             result = it->second;
         }

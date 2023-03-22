@@ -37,6 +37,11 @@ namespace net_lib{
             return begin() + readerIndex_;
         }
 
+        //将readerIndex_移动至end位置
+        void retrieveUntil(const char *end){
+            retrieve(end - peek());
+        }
+
         //复位操作
         void retrieve(size_t len){
             //一次没有全部读完可读数据,那么移动readerIndex_
@@ -51,6 +56,12 @@ namespace net_lib{
         void retrieveAll(){
             readerIndex_ = kCheapPrepend;
             writerIndex_ = kCheapPrepend;
+        }
+
+        std::string GetBufferAllAsString() const {
+            size_t len = readableBytes();
+            std::string result(peek(),len);
+            return result;
         }
 
         //将onMessage函数上报的Buffer数据，转成string类型的数据返回
@@ -94,10 +105,16 @@ namespace net_lib{
             writerIndex_ += len;
         }
 
+        const char *findCRLF() const {
+            const char *crlf = std::search(peek(),beginWrite(),kCRLF,kCRLF + 2);
+            return crlf == beginWrite() ? nullptr : crlf;
+        }
+
         char* beginWrite(){
             return begin() + writerIndex_;
         }
 
+        //返回可写区域开始的下标
         const char* beginWrite() const {
             return begin() + writerIndex_;
         }
@@ -119,7 +136,7 @@ namespace net_lib{
          * prependableBytes() | reader | writer
          * 可能因为reader的空间被读了一部分readerIndex_会后移，因此前面产生了一部分的空闲区，为了避免浪费所以将下标前移空闲位置大小
          */
-        void makespace(int len){
+        void makespace(size_t len){
             if(writableBytes() + readerIndex_ < len + kCheapPrepend){
                 buffer_.resize(writerIndex_ + len);
             } else {
@@ -136,6 +153,7 @@ namespace net_lib{
         std::vector<char> buffer_;
         size_t readerIndex_;
         size_t writerIndex_;
+        static const char kCRLF[];
     };
 }
 

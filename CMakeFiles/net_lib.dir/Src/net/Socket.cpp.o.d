@@ -25,7 +25,7 @@ CMakeFiles/net_lib.dir/Src/net/Socket.cpp.o: \
  /usr/include/asm-generic/socket.h /usr/include/asm/sockios.h \
  /usr/include/asm-generic/sockios.h /usr/include/netinet/tcp.h \
  /root/net_lib/Src/net/Socket.h \
- /root/net_lib/Src/net/../Base/nocopyable.h \
+ /root/net_lib/Src/net/../Base/noncopyable.h \
  /root/net_lib/Src/net/../Base/Logger.h \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/string \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/bits/stringfwd.h \
@@ -103,6 +103,6 @@ CMakeFiles/net_lib.dir/Src/net/Socket.cpp.o: \
  /usr/include/asm-generic/errno-base.h \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/bits/functional_hash.h \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/bits/basic_string.tcc \
- /root/net_lib/Src/net/../Base/nocopyable.h \
+ /root/net_lib/Src/net/../Base/noncopyable.h \
  /root/net_lib/Src/net/InetAddress.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/bits/in.h

@@ -124,7 +124,7 @@ CMakeFiles/net_lib.dir/Src/net/TCPServer.cpp.o: \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/bits/erase_if.h \
  /root/net_lib/Src/net/Callbacks.h /root/net_lib/Src/net/Acceptor.h \
  /root/net_lib/Src/net/Socket.h \
- /root/net_lib/Src/net/../Base/nocopyable.h \
+ /root/net_lib/Src/net/../Base/noncopyable.h \
  /root/net_lib/Src/net/Channel.h \
  /root/net_lib/Src/net/../Base/Timestamp.h \
  /root/net_lib/Src/net/../Base/copyable.h \
@@ -163,4 +163,4 @@ CMakeFiles/net_lib.dir/Src/net/TCPServer.cpp.o: \
  /opt/rh/devtoolset-9/root/usr/include/c++/9/bits/uniform_int_dist.h \
  /root/net_lib/Src/net/EventLoopThreadPool.h \
  /root/net_lib/Src/net/../Base/Logger.h \
- /root/net_lib/Src/net/../Base/nocopyable.h
+ /root/net_lib/Src/net/../Base/noncopyable.h

@@ -1,1 +1,0 @@
-/usr/bin/c++ -O3 -DNDEBUG -rdynamic CMakeFiles/echoServer.dir/echoServer.cc.o -o ../../example/echoServer  -Wl,-rpath,/home/think5/webserver/lib ../../lib/libtiny_webserver.so -lpthread 

@@ -54,7 +54,7 @@ class LogStream : noncopyable {
 
   // 对整型的特殊处理
   template <typename T>
-  void formatInterger(T);
+  void formatInteger(T);
 
   Buffer buffer_;
 };

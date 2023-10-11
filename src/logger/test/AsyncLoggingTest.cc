@@ -5,8 +5,6 @@
 #include "Logging.h"
 #include "Timestamp.h"
 
-using namespace detail;
-
 static const off_t kRollSize = 1 * 1024 * 1024;
 AsyncLogging* g_asyncLog = NULL;
 
@@ -17,13 +15,12 @@ void test_Logging() {
   LOG_INFO << "info";
   LOG_WARN << "warn";
   LOG_ERROR << "error";
-
   // 注意不能轻易使用 LOG_FATAL, LOG_SYSFATAL, 会导致程序abort
 
-  // const int n = 10;
-  // for (int i = 0; i < n; ++i) {
-  //   LOG_INFO << "Hello, " << i << " abc...xyz";
-  // }
+  const int n = 10;
+  for (int i = 0; i < n; ++i) {
+    LOG_INFO << "Hello, " << i << " abc...xyz";
+  }
 }
 
 void test_AsyncLogging() {

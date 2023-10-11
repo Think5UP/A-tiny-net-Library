@@ -1,8 +1,8 @@
 #include "LogFile.h"
 
-LogFile::LogFile(const std::string& baseName, off_t rollSize, int flushInterval,
+LogFile::LogFile(const std::string& basename, off_t rollSize, int flushInterval,
                  int checkEveryN)
-    : baseName_(baseName),
+    : baseName_(basename),
       rollSize_(rollSize),
       flushInterval_(flushInterval),
       checkEveryN_(checkEveryN),
@@ -15,30 +15,24 @@ LogFile::LogFile(const std::string& baseName, off_t rollSize, int flushInterval,
 }
 
 void LogFile::append(const char* data, int len) {
-  // 上把大锁
   std::lock_guard<std::mutex> lock(*mutex_);
   appendInLock(data, len);
 }
 
-// 向日志文件中添加日志数据，在特定条件下进行日志文件的滚动（创建新的文件）或刷新文件内容到磁盘
 void LogFile::appendInLock(const char* data, int len) {
   file_->append(data, len);
 
-  // 检查写入量 大于rollSize滚动日志
   if (file_->writtenBytes() > rollSize_) {
     rollFile();
   } else {
-    // 达不到但是追加次数到达了N次也考虑滚动日志
     ++count_;
     if (count_ >= checkEveryN_) {
       count_ = 0;
       time_t now = ::time(NULL);
       time_t thisPeriod = now / kRollPerSeconds_ * kRollPerSeconds_;
-      // 如果当前时间段和上次记录的时间不同也满足滚动条件
       if (thisPeriod != startOfPeriod_) {
         rollFile();
       } else if (now - lastFlush_ > flushInterval_) {
-        // 或者当前时间和上次刷新时间间隔大于flushInterval_就刷新日志
         lastFlush_ = now;
         file_->flush();
       }
@@ -46,41 +40,44 @@ void LogFile::appendInLock(const char* data, int len) {
   }
 }
 
-void LogFile::flush() { file_->flush(); }
+void LogFile::flush() {
+  // std::lock_guard<std::mutex> lock(*mutex_);
+  file_->flush();
+}
 
 // 滚动日志
+// basename + time + hostname + pid + ".log"
 bool LogFile::rollFile() {
   time_t now = 0;
   std::string filename = getLogFileName(baseName_, &now);
-
-  // 得到当前时间所在时间段的起始时间
+  // 计算现在是第几天
+  // now/kRollPerSeconds求出现在是第几天，再乘以秒数相当于是当前天数0点对应的秒数
   time_t start = now / kRollPerSeconds_ * kRollPerSeconds_;
 
-  // 当前时间已经超过了上次滚动日志文件的时间 roll它
   if (now > lastRoll_) {
     lastRoll_ = now;
     lastFlush_ = now;
     startOfPeriod_ = start;
+    // 让file_指向一个名为filename的文件，相当于新建了一个文件
     file_.reset(new FileUtil(filename));
     return true;
   }
   return false;
 }
 
-// 将文件名称封装成basename + time + ".log"这样类型
-std::string LogFile::getLogFileName(const std::string& baseName, time_t* now) {
+std::string LogFile::getLogFileName(const std::string& basename, time_t* now) {
   std::string filename;
-  filename.reserve(baseName.size() + 64);
-  filename = baseName;
+  filename.reserve(basename.size() + 64);
+  filename = basename;
 
   char timebuf[32];
   struct tm tm;
   *now = time(NULL);
-  // 将当前时间戳转化为本地时间
   localtime_r(now, &tm);
-
-  strftime(timebuf, sizeof(timebuf), ".%Y%m%d-%H%M%S", &tm);
+  // 写入时间
+  strftime(timebuf, sizeof timebuf, ".%Y%m%d-%H%M%S", &tm);
   filename += timebuf;
+
   filename += ".log";
 
   return filename;

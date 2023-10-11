@@ -1,8 +1,7 @@
 #ifndef FILEUTIL_H_
 #define FILEUTIL_H_
 
-#include <stdio.h>
-
+#include <cstdio>
 #include <string>
 
 class FileUtil {
